@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txt_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_news"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/img_news"
+        android:layout_toRightOf="@+id/img_news"
+        android:text="@string/txt_section"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_section"
+        android:layout_alignStart="@+id/txt_section"
+        android:layout_below="@+id/txt_section"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/txt_title" />
+
+    <TextView
+        android:id="@+id/txt_brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_brief"
+        android:layout_below="@+id/img_news"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
